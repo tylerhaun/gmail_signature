@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Gmail Signature</title>
+    <link id="css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body id="home">
+    <table>
+      <tr>
+        <td>
+          <img id="image" src="/image.jpg"></img>
+        </td>
+        <td>
+          <table id="inner-table">
+            <tr>
+              <td>
+                <h2>Tyler Haun</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Backend Software Engineer</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span><a href="tel:+17169488938">(716) 948-8938</a></span>
+                  <span> | </span>
+                  <span><a href="https://linktr.ee/tylerhaun">Links</a></span>
+                </span>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+var imageElement = document.getElementById("image");
+var cssElement = document.getElementById("css");
+var time = (new Date()).valueOf();
+imageElement.src = imageElement.src + "?" + time;
+cssElement.href = cssElement.href + "?" + time;
+  </script>
+</html>
